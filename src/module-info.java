@@ -6,4 +6,5 @@
  *
  */
 module PortAnalyzer {
+	requires java.net.http;
 }
