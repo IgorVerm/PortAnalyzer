@@ -108,4 +108,28 @@ public class Stock {
 		this.earnings = earnings;
 	}
 
+	@Override
+	public String toString() {
+		return "Stock [tickerName=" + tickerName + ", priceEarnings=" + priceEarnings + ", lastPrice=" + lastPrice
+				+ ", fiftyWeekLow=" + fiftyWeekLow + ", fiftyWeekHigh=" + fiftyWeekHigh + ", marketCap=" + marketCap
+				+ ", earnings=" + earnings + ", EPS=" + EPS + ", trailingEPS=" + trailingEPS + ", trailingPE="
+				+ trailingPE + "]";
+	}
+
+	public double getEPS() {
+		return EPS;
+	}
+
+	public void setEPS(double ePS) {
+		EPS = ePS;
+	}
+
+	public double getTrailingEPS() {
+		return trailingEPS;
+	}
+
+	public void setTrailingEPS(double trailingEPS) {
+		this.trailingEPS = trailingEPS;
+	}
+
 }

@@ -8,13 +8,13 @@ import java.net.http.HttpResponse;
 
 public class YahooFinanceConnection {
 	public YahooFinanceConnection (String ticker) {
-		
+		lookup(ticker);
 	}
 	
 	public void lookup (String ticker) {
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("https://yfapi.net/v8/finance/chart/"+ticker))
-				.header("x-api-key", "YOUR-PERSONAL-API-KEY")
+				.header("x-api-key", "1wb0AiTOvX1HhVfWjdkHe2l7PdjAYV433omtSMsN")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
 				HttpResponse<String> response;
